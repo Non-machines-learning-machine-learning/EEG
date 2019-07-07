@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:EEG1-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -26,33 +25,22 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD620.p
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J1Input1
-U 1 1 5CBF01FC
-P 850 850
-F 0 "J1Input1" H 778 1088 50  0000 C CNN
-F 1 "Conn_Coaxial" H 778 997 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 850 850 50  0001 C CNN
-F 3 " ~" H 850 850 50  0001 C CNN
-	1    850  850 
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_Coaxial J2Input2
+L Connector:Conn_Coaxial J2In2
 U 1 1 5CBFAFA0
 P 850 1250
-F 0 "J2Input2" H 778 1488 50  0000 C CNN
-F 1 "Conn_Coaxial" H 778 1397 50  0000 C CNN
+F 0 "J2In2" H 778 1488 50  0000 C CNN
+F 1 "BNCIn2" H 778 1397 50  0000 C CNN
 F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 850 1250 50  0001 C CNN
 F 3 " ~" H 850 1250 50  0001 C CNN
 	1    850  1250
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J3InputGround1
+L Connector:Conn_Coaxial J3InGND1
 U 1 1 5CBFB6AC
 P 850 1650
-F 0 "J3InputGround1" H 778 1888 50  0000 C CNN
-F 1 "Conn_Coaxial" H 778 1797 50  0000 C CNN
+F 0 "J3InGND1" H 778 1888 50  0000 C CNN
+F 1 "BNCGnd" H 778 1797 50  0000 C CNN
 F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 850 1650 50  0001 C CNN
 F 3 " ~" H 850 1650 50  0001 C CNN
 	1    850  1650
@@ -1249,11 +1237,11 @@ Wire Wire Line
 	2600 5950 3100 5950
 Connection ~ 2600 5950
 $Comp
-L Connector:Conn_01x02_Male PIN_OUT1
+L Connector:Conn_01x02_Male PinOut1
 U 1 1 5CC0B424
 P 3300 6050
-F 0 "PIN_OUT1" H 3272 5932 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 3272 6023 50  0000 R CNN
+F 0 "PinOut1" H 3272 5932 50  0000 R CNN
+F 1 "01x02Male" H 3272 6023 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3300 6050 50  0001 C CNN
 F 3 "~" H 3300 6050 50  0001 C CNN
 	1    3300 6050
@@ -1262,10 +1250,10 @@ $EndComp
 Wire Wire Line
 	3100 6050 3100 6200
 $Comp
-L Connector:Conn_01x03_Male POWER_SUPPLY_P1G2N3
+L Connector:Conn_01x03_Male POW_1+2G3-1
 U 1 1 5CC16E45
 P 5550 5600
-F 0 "POWER_SUPPLY_P1G2N3" V 5350 5150 50  0000 L CNN
+F 0 "POW_1+2G3-1" V 5350 5150 50  0000 L CNN
 F 1 "Conn_01x03_Male" V 5450 5250 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5550 5600 50  0001 C CNN
 F 3 "~" H 5550 5600 50  0001 C CNN
@@ -1293,17 +1281,6 @@ F 2 "" H 5450 5900 50  0001 C CNN
 F 3 "" H 5450 5900 50  0001 C CNN
 	1    5450 5900
 	0    -1   1    0   
-$EndComp
-$Comp
-L Connector:Conn_Coaxial BNC_OUT1
-U 1 1 5CC28263
-P 3200 5650
-F 0 "BNC_OUT1" H 3128 5888 50  0000 C CNN
-F 1 "Conn_Coaxial" H 3128 5797 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 3200 5650 50  0001 C CNN
-F 3 " ~" H 3200 5650 50  0001 C CNN
-	1    3200 5650
-	1    0    0    1   
 $EndComp
 Wire Wire Line
 	2600 5950 2600 5650
@@ -1354,10 +1331,10 @@ Wire Wire Line
 Wire Wire Line
 	1850 6500 1950 6500
 $Comp
-L Device:C ACoupling1
+L Device:C ACoup1
 U 1 1 5CD50451
 P 2250 750
-F 0 "ACoupling1" V 2050 900 50  0000 C CNN
+F 0 "ACoup1" V 2050 900 50  0000 C CNN
 F 1 "0.1u" V 2150 900 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2288 600 50  0001 C CNN
 F 3 "~" H 2250 750 50  0001 C CNN
@@ -1365,10 +1342,10 @@ F 3 "~" H 2250 750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C DCoupling2
+L Device:C DCoup2
 U 1 1 5CE2BDDF
 P 5050 2650
-F 0 "DCoupling2" V 5200 2800 50  0000 C CNN
+F 0 "DCoup2" V 5200 2800 50  0000 C CNN
 F 1 "0.1u" V 4950 2800 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5088 2500 50  0001 C CNN
 F 3 "~" H 5050 2650 50  0001 C CNN
@@ -1376,23 +1353,12 @@ F 3 "~" H 5050 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 4900 2650
-$Comp
-L Device:C DCoupling4
-U 1 1 5CE3B8F9
-P 5350 850
-F 0 "DCoupling4" V 5500 1000 50  0000 C CNN
-F 1 "0.1u" V 5250 950 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5388 700 50  0001 C CNN
-F 3 "~" H 5350 850 50  0001 C CNN
-	1    5350 850 
-	0    -1   -1   0   
-$EndComp
 Connection ~ 5500 850 
 $Comp
-L Device:C ECoupling4
+L Device:C ECoup4
 U 1 1 5CE4BFBD
 P 8100 850
-F 0 "ECoupling4" V 8250 1000 50  0000 C CNN
+F 0 "ECoup4" V 8250 1000 50  0000 C CNN
 F 1 "0.1u" V 8000 1000 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 8138 700 50  0001 C CNN
 F 3 "~" H 8100 850 50  0001 C CNN
@@ -1400,10 +1366,10 @@ F 3 "~" H 8100 850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C ECoupling2
+L Device:C ECoup2
 U 1 1 5CE4F62F
 P 7800 2650
-F 0 "ECoupling2" V 7650 2500 50  0000 C CNN
+F 0 "ECoup2" V 7650 2500 50  0000 C CNN
 F 1 "0.1u" V 7850 2500 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7838 2500 50  0001 C CNN
 F 3 "~" H 7800 2650 50  0001 C CNN
@@ -1411,12 +1377,12 @@ F 3 "~" H 7800 2650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C SupplyCoupling2
+L Device:C SCoup2
 U 1 1 5CE59C59
 P 5250 6100
-F 0 "SupplyCoupling2" V 4998 6100 50  0000 C CNN
+F 0 "SCoup2" V 4998 6100 50  0000 C CNN
 F 1 "10u" V 5089 6100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_Elec_4x5.4" H 5288 5950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm" H 5288 5950 50  0001 C CNN
 F 3 "~" H 5250 6100 50  0001 C CNN
 	1    5250 6100
 	1    0    0    -1  
@@ -1424,10 +1390,10 @@ $EndComp
 Connection ~ 8250 850 
 Connection ~ 7650 2650
 $Comp
-L Device:C FCoupling1
+L Device:C FCoup1
 U 1 1 5CE7CB5B
 P 2100 4100
-F 0 "FCoupling1" V 2200 4350 50  0000 C CNN
+F 0 "FCoup1" V 2200 4350 50  0000 C CNN
 F 1 "0.1u" V 2050 4250 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2138 3950 50  0001 C CNN
 F 3 "~" H 2100 4100 50  0001 C CNN
@@ -1435,10 +1401,10 @@ F 3 "~" H 2100 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C FCoupling3
+L Device:C FCoup3
 U 1 1 5CE7D7B0
 P 4150 4200
-F 0 "FCoupling3" V 4000 4450 50  0000 C CNN
+F 0 "FCoup3" V 4000 4450 50  0000 C CNN
 F 1 "0.1u" V 4300 4250 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4188 4050 50  0001 C CNN
 F 3 "~" H 4150 4200 50  0001 C CNN
@@ -1446,10 +1412,10 @@ F 3 "~" H 4150 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C GCoupling1
+L Device:C GCoup1
 U 1 1 5CE7D9F5
 P 5450 3750
-F 0 "GCoupling1" V 5600 3900 50  0000 C CNN
+F 0 "GCoup1" V 5600 3900 50  0000 C CNN
 F 1 "0.1u" V 5500 3900 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5488 3600 50  0001 C CNN
 F 3 "~" H 5450 3750 50  0001 C CNN
@@ -1457,10 +1423,10 @@ F 3 "~" H 5450 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C HCoupling1
+L Device:C HCoup1
 U 1 1 5CE7DC3A
 P 7700 4100
-F 0 "HCoupling1" V 7600 4350 50  0000 C CNN
+F 0 "HCoup1" V 7600 4350 50  0000 C CNN
 F 1 "0.1u" V 7800 4250 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7738 3950 50  0001 C CNN
 F 3 "~" H 7700 4100 50  0001 C CNN
@@ -1468,10 +1434,10 @@ F 3 "~" H 7700 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C ICoupling1
+L Device:C ICoup1
 U 1 1 5CE7DE7F
 P 1800 5650
-F 0 "ICoupling1" V 1950 5800 50  0000 C CNN
+F 0 "ICoup1" V 1950 5800 50  0000 C CNN
 F 1 "0.1u" V 1700 5800 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1838 5500 50  0001 C CNN
 F 3 "~" H 1800 5650 50  0001 C CNN
@@ -1479,10 +1445,10 @@ F 3 "~" H 1800 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C HCoupling3
+L Device:C HCoup3
 U 1 1 5CE7E61D
 P 9750 4200
-F 0 "HCoupling3" V 9650 4450 50  0000 C CNN
+F 0 "HCoup3" V 9650 4450 50  0000 C CNN
 F 1 "0.1u" V 9800 4350 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9788 4050 50  0001 C CNN
 F 3 "~" H 9750 4200 50  0001 C CNN
@@ -1490,10 +1456,10 @@ F 3 "~" H 9750 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C SupplyCoupling1
+L Device:C SCoup1
 U 1 1 5CE7E8BE
 P 4900 6100
-F 0 "SupplyCoupling1" V 4648 6100 50  0000 C CNN
+F 0 "SCoup1" V 4648 6100 50  0000 C CNN
 F 1 "0.1u" V 4739 6100 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4938 5950 50  0001 C CNN
 F 3 "~" H 4900 6100 50  0001 C CNN
@@ -1521,10 +1487,10 @@ Wire Wire Line
 	1500 6500 1850 6500
 Connection ~ 1850 6500
 $Comp
-L Device:R_Small_US CConnect1
+L Device:R_Small_US CCon1
 U 1 1 5D00817B
 P 2800 1050
-F 0 "CConnect1" V 2650 1000 50  0000 C CNN
+F 0 "CCon1" V 2650 1000 50  0000 C CNN
 F 1 "." V 2686 1050 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2800 1050 50  0001 C CNN
 F 3 "~" H 2800 1050 50  0001 C CNN
@@ -1535,17 +1501,6 @@ Wire Wire Line
 	2600 1050 2700 1050
 Wire Wire Line
 	2900 1050 2950 1050
-$Comp
-L Device:R_Small_US DConnect1
-U 1 1 5D015EB4
-P 3550 1050
-F 0 "DConnect1" V 3345 1050 50  0000 C CNN
-F 1 "." V 3436 1050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3550 1050 50  0001 C CNN
-F 3 "~" H 3550 1050 50  0001 C CNN
-	1    3550 1050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3350 1050 3450 1050
 Wire Wire Line
@@ -1553,10 +1508,10 @@ Wire Wire Line
 Connection ~ 3350 1050
 Connection ~ 3800 1050
 $Comp
-L Device:R_Small_US EConnect1
+L Device:R_Small_US ECon1
 U 1 1 5D022F13
 P 6350 1050
-F 0 "EConnect1" V 6145 1050 50  0000 C CNN
+F 0 "ECon1" V 6145 1050 50  0000 C CNN
 F 1 "." V 6236 1050 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6350 1050 50  0001 C CNN
 F 3 "~" H 6350 1050 50  0001 C CNN
@@ -1568,10 +1523,10 @@ Wire Wire Line
 Wire Wire Line
 	1050 1250 1800 1250
 $Comp
-L Device:R_Small_US BConnect2
+L Device:R_Small_US BCon2
 U 1 1 5D025B3B
 P 1600 1500
-F 0 "BConnect2" H 1532 1454 50  0000 R CNN
+F 0 "BCon2" H 1532 1454 50  0000 R CNN
 F 1 "." H 1532 1545 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1600 1500 50  0001 C CNN
 F 3 "~" H 1600 1500 50  0001 C CNN
@@ -1581,10 +1536,10 @@ $EndComp
 Wire Wire Line
 	1400 1600 1400 1500
 $Comp
-L Device:R_Small_US BConnect1
+L Device:R_Small_US BCon1
 U 1 1 5D0255AB
 P 1400 1400
-F 0 "BConnect1" H 1300 1350 50  0000 R CNN
+F 0 "BCon1" H 1300 1350 50  0000 R CNN
 F 1 "." H 1332 1445 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1400 1400 50  0001 C CNN
 F 3 "~" H 1400 1400 50  0001 C CNN
@@ -1596,10 +1551,10 @@ Wire Wire Line
 Wire Wire Line
 	1600 1400 1600 950 
 $Comp
-L Device:R_Small_US FConnect1
+L Device:R_Small_US FCon1
 U 1 1 5D02B505
 P 1050 3800
-F 0 "FConnect1" H 982 3754 50  0000 R CNN
+F 0 "FCon1" H 982 3754 50  0000 R CNN
 F 1 "." H 982 3845 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1050 3800 50  0001 C CNN
 F 3 "~" H 1050 3800 50  0001 C CNN
@@ -1609,10 +1564,10 @@ $EndComp
 Wire Wire Line
 	1050 3700 1050 3450
 $Comp
-L Device:R_Small_US GConnect1
+L Device:R_Small_US GCon1
 U 1 1 5D02BF47
 P 5100 3950
-F 0 "GConnect1" V 5200 3900 50  0000 C CNN
+F 0 "GCon1" V 5200 3900 50  0000 C CNN
 F 1 "." V 5214 3950 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5100 3950 50  0001 C CNN
 F 3 "~" H 5100 3950 50  0001 C CNN
@@ -1622,10 +1577,10 @@ $EndComp
 Wire Wire Line
 	5000 3950 4950 3950
 $Comp
-L Device:R_Small_US HConnect1
+L Device:R_Small_US HCon1
 U 1 1 5D02C88A
 P 6500 4300
-F 0 "HConnect1" V 6705 4300 50  0000 C CNN
+F 0 "HCon1" V 6705 4300 50  0000 C CNN
 F 1 "." V 6614 4300 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6500 4300 50  0001 C CNN
 F 3 "~" H 6500 4300 50  0001 C CNN
@@ -1635,10 +1590,10 @@ $EndComp
 Wire Wire Line
 	6600 4300 6700 4300
 $Comp
-L Device:R_Small_US IConnect1
+L Device:R_Small_US ICon1
 U 1 1 5D02E459
 P 1350 5850
-F 0 "IConnect1" V 1450 6000 50  0000 C CNN
+F 0 "ICon1" V 1450 6000 50  0000 C CNN
 F 1 "." V 1464 5850 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1350 5850 50  0001 C CNN
 F 3 "~" H 1350 5850 50  0001 C CNN
@@ -1652,21 +1607,21 @@ Wire Wire Line
 Wire Wire Line
 	1450 5850 1750 5850
 $Comp
-L Device:C SupplyCoupling4
+L Device:C SCoup4
 U 1 1 5D0745DF
 P 6200 6100
-F 0 "SupplyCoupling4" V 6350 6100 50  0000 C CNN
+F 0 "SCoup4" V 6350 6100 50  0000 C CNN
 F 1 "10u" V 6450 6100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_Elec_4x5.4" H 6238 5950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm" H 6238 5950 50  0001 C CNN
 F 3 "~" H 6200 6100 50  0001 C CNN
 	1    6200 6100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C SupplyCoupling3
+L Device:C SCoup3
 U 1 1 5D0745E5
 P 5850 6100
-F 0 "SupplyCoupling3" V 5950 6100 50  0000 C CNN
+F 0 "SCoup3" V 5950 6100 50  0000 C CNN
 F 1 "0.1u" V 6050 6100 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5888 5950 50  0001 C CNN
 F 3 "~" H 5850 6100 50  0001 C CNN
@@ -1693,10 +1648,10 @@ Connection ~ 5850 5800
 Wire Wire Line
 	5850 5800 6200 5800
 $Comp
-L Device:C ACoupling2
+L Device:C ACoup2
 U 1 1 5CC5ECD1
 P 2550 1350
-F 0 "ACoupling2" V 2400 1400 50  0000 C CNN
+F 0 "ACoup2" V 2400 1400 50  0000 C CNN
 F 1 "0.1u" V 2700 1350 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2588 1200 50  0001 C CNN
 F 3 "~" H 2550 1350 50  0001 C CNN
@@ -1704,10 +1659,10 @@ F 3 "~" H 2550 1350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C BCoupling2
+L Device:C BCoup2
 U 1 1 5CC71D85
 P 2100 3100
-F 0 "BCoupling2" V 2250 3250 50  0000 C CNN
+F 0 "BCoup2" V 2250 3250 50  0000 C CNN
 F 1 "0.1u" V 2000 3250 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2138 2950 50  0001 C CNN
 F 3 "~" H 2100 3100 50  0001 C CNN
@@ -1716,10 +1671,10 @@ F 3 "~" H 2100 3100 50  0001 C CNN
 $EndComp
 Connection ~ 1950 3100
 $Comp
-L Device:C BCoupling1
+L Device:C BCoup1
 U 1 1 5CC72D9D
 P 1800 2500
-F 0 "BCoupling1" V 1650 2400 50  0000 C CNN
+F 0 "BCoup1" V 1650 2400 50  0000 C CNN
 F 1 "0.1u" V 1750 2350 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1838 2350 50  0001 C CNN
 F 3 "~" H 1800 2500 50  0001 C CNN
@@ -1727,10 +1682,10 @@ F 3 "~" H 1800 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C DCoupling1
+L Device:C DCoup1
 U 1 1 5CC980B5
 P 5050 2050
-F 0 "DCoupling1" V 5150 2300 50  0000 C CNN
+F 0 "DCoup1" V 5150 2300 50  0000 C CNN
 F 1 "0.1u" V 4950 2200 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5088 1900 50  0001 C CNN
 F 3 "~" H 5050 2050 50  0001 C CNN
@@ -1739,10 +1694,10 @@ F 3 "~" H 5050 2050 50  0001 C CNN
 $EndComp
 Connection ~ 4900 2050
 $Comp
-L Device:C DCoupling3
+L Device:C DCoup3
 U 1 1 5CCB6313
 P 5100 1450
-F 0 "DCoupling3" V 5250 1500 50  0000 C CNN
+F 0 "DCoup3" V 5250 1500 50  0000 C CNN
 F 1 "0.1u" V 5150 1600 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5138 1300 50  0001 C CNN
 F 3 "~" H 5100 1450 50  0001 C CNN
@@ -1753,10 +1708,10 @@ Wire Wire Line
 	5250 1450 5500 1450
 Connection ~ 5500 1450
 $Comp
-L Device:C ECoupling1
+L Device:C ECoup1
 U 1 1 5CD1779B
 P 7800 2050
-F 0 "ECoupling1" V 7700 1800 50  0000 C CNN
+F 0 "ECoup1" V 7700 1800 50  0000 C CNN
 F 1 "0.1u" V 7850 1900 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7838 1900 50  0001 C CNN
 F 3 "~" H 7800 2050 50  0001 C CNN
@@ -1764,10 +1719,10 @@ F 3 "~" H 7800 2050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C ECoupling3
+L Device:C ECoup3
 U 1 1 5CD4E50D
 P 7850 1450
-F 0 "ECoupling3" V 7700 1550 50  0000 C CNN
+F 0 "ECoup3" V 7700 1550 50  0000 C CNN
 F 1 "0.1u" V 7950 1600 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7888 1300 50  0001 C CNN
 F 3 "~" H 7850 1450 50  0001 C CNN
@@ -1778,10 +1733,10 @@ Wire Wire Line
 	8250 1450 8000 1450
 Connection ~ 8250 1450
 $Comp
-L Device:C FCoupling2
+L Device:C FCoup2
 U 1 1 5CD93D19
 P 2100 4700
-F 0 "FCoupling2" V 1900 4750 50  0000 C CNN
+F 0 "FCoup2" V 1900 4750 50  0000 C CNN
 F 1 "0.1u" V 2150 4850 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2138 4550 50  0001 C CNN
 F 3 "~" H 2100 4700 50  0001 C CNN
@@ -1790,10 +1745,10 @@ F 3 "~" H 2100 4700 50  0001 C CNN
 $EndComp
 Connection ~ 2250 4700
 $Comp
-L Device:C FCoupling4
+L Device:C FCoup4
 U 1 1 5CDC8C13
 P 4150 4800
-F 0 "FCoupling4" V 4000 4800 50  0000 C CNN
+F 0 "FCoup4" V 4000 4800 50  0000 C CNN
 F 1 "0.1u" V 4200 4950 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4188 4650 50  0001 C CNN
 F 3 "~" H 4150 4800 50  0001 C CNN
@@ -1802,10 +1757,10 @@ F 3 "~" H 4150 4800 50  0001 C CNN
 $EndComp
 Connection ~ 4300 4800
 $Comp
-L Device:C GCoupling2
+L Device:C GCoup2
 U 1 1 5CDFD634
 P 5450 4350
-F 0 "GCoupling2" V 5250 4450 50  0000 C CNN
+F 0 "GCoup2" V 5250 4450 50  0000 C CNN
 F 1 "0.1u" V 5600 4400 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5488 4200 50  0001 C CNN
 F 3 "~" H 5450 4350 50  0001 C CNN
@@ -1814,10 +1769,10 @@ F 3 "~" H 5450 4350 50  0001 C CNN
 $EndComp
 Connection ~ 5600 4350
 $Comp
-L Device:C HCoupling2
+L Device:C HCoup2
 U 1 1 5CE32B9F
 P 7700 4700
-F 0 "HCoupling2" V 7550 4800 50  0000 C CNN
+F 0 "HCoup2" V 7550 4800 50  0000 C CNN
 F 1 "0.1u" V 7800 4850 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7738 4550 50  0001 C CNN
 F 3 "~" H 7700 4700 50  0001 C CNN
@@ -1826,10 +1781,10 @@ F 3 "~" H 7700 4700 50  0001 C CNN
 $EndComp
 Connection ~ 7850 4700
 $Comp
-L Device:C HCoupling4
+L Device:C HCoup4
 U 1 1 5CE6633B
 P 9750 4800
-F 0 "HCoupling4" V 9600 4800 50  0000 C CNN
+F 0 "HCoup4" V 9600 4800 50  0000 C CNN
 F 1 "0.1u" V 9800 4950 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9788 4650 50  0001 C CNN
 F 3 "~" H 9750 4800 50  0001 C CNN
@@ -1838,10 +1793,10 @@ F 3 "~" H 9750 4800 50  0001 C CNN
 $EndComp
 Connection ~ 9900 4800
 $Comp
-L Device:C ICoupling2
+L Device:C ICoup2
 U 1 1 5CE99BAC
 P 1800 6250
-F 0 "ICoupling2" V 1650 6350 50  0000 C CNN
+F 0 "ICoup2" V 1650 6350 50  0000 C CNN
 F 1 "0.1u" V 1850 6400 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1838 6100 50  0001 C CNN
 F 3 "~" H 1800 6250 50  0001 C CNN
@@ -1854,7 +1809,7 @@ L Connector:Conn_01x03_Male KK_KF2510
 U 1 1 5CEB6310
 P 5550 6200
 F 0 "KK_KF2510" V 5450 6400 50  0000 R CNN
-F 1 "Conn_01x03_Male" V 5350 6500 50  0000 R CNN
+F 1 "KK_KF2510" V 5350 6500 50  0000 R CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 5550 6200 50  0001 C CNN
 F 3 "~" H 5550 6200 50  0001 C CNN
 	1    5550 6200
@@ -1910,10 +1865,10 @@ Connection ~ 5550 6000
 Wire Wire Line
 	5550 5800 5550 6000
 $Comp
-L Device:R_Small_US BGroundConnect1
+L Device:R_Small_US BGNDCon1
 U 1 1 5CC58E47
 P 950 2050
-F 0 "BGroundConnect1" V 800 2000 50  0000 C CNN
+F 0 "BGNDCon1" V 800 2000 50  0000 C CNN
 F 1 "." V 836 2050 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 950 2050 50  0001 C CNN
 F 3 "~" H 950 2050 50  0001 C CNN
@@ -2491,36 +2446,80 @@ $EndComp
 Wire Wire Line
 	2350 2000 2600 2000
 $Comp
-L Device:R_Small_US PWRGroundZoneConnect1
-U 1 1 5CCC162A
-P 5100 6850
-F 0 "PWRGroundZoneConnect1" V 4895 6850 50  0000 C CNN
-F 1 "0" V 4986 6850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5100 6850 50  0001 C CNN
-F 3 "~" H 5100 6850 50  0001 C CNN
-	1    5100 6850
-	0    1    1    0   
+L Device:R_Small_US CaseGND1
+U 1 1 5D29F32A
+P 6700 5900
+F 0 "CaseGND1" V 6905 5900 50  0000 C CNN
+F 1 "." V 6814 5900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6700 5900 50  0001 C CNN
+F 3 "~" H 6700 5900 50  0001 C CNN
+	1    6700 5900
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0101
-U 1 1 5CCC3A80
-P 5200 6850
-F 0 "#PWR0101" H 5200 6600 50  0001 C CNN
-F 1 "GND" H 5205 6677 50  0000 C CNN
-F 2 "" H 5200 6850 50  0001 C CNN
-F 3 "" H 5200 6850 50  0001 C CNN
-	1    5200 6850
+L power:GND #PWR0103
+U 1 1 5D29F8CC
+P 6700 6000
+F 0 "#PWR0103" H 6700 5750 50  0001 C CNN
+F 1 "GND" H 6705 5827 50  0000 C CNN
+F 2 "" H 6700 6000 50  0001 C CNN
+F 3 "" H 6700 6000 50  0001 C CNN
+	1    6700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D29FBDD
+P 6700 5800
+F 0 "#PWR0104" H 6700 5550 50  0001 C CNN
+F 1 "GND" H 6705 5627 50  0000 C CNN
+F 2 "" H 6700 5800 50  0001 C CNN
+F 3 "" H 6700 5800 50  0001 C CNN
+	1    6700 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C DCoup4
+U 1 1 5CE3B8F9
+P 5350 850
+F 0 "DCoup4" V 5500 1000 50  0000 C CNN
+F 1 "0.1u" V 5250 950 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5388 700 50  0001 C CNN
+F 3 "~" H 5350 850 50  0001 C CNN
+	1    5350 850 
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDA #PWR0102
-U 1 1 5CCC70FF
-P 5000 6850
-F 0 "#PWR0102" H 5000 6600 50  0001 C CNN
-F 1 "GNDA" V 5005 6723 50  0000 R CNN
-F 2 "" H 5000 6850 50  0001 C CNN
-F 3 "" H 5000 6850 50  0001 C CNN
-	1    5000 6850
+L Device:R_Small_US DCon1
+U 1 1 5D015EB4
+P 3550 1050
+F 0 "DCon1" V 3345 1050 50  0000 C CNN
+F 1 "." V 3436 1050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3550 1050 50  0001 C CNN
+F 3 "~" H 3550 1050 50  0001 C CNN
+	1    3550 1050
 	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1In1
+U 1 1 5CBF01FC
+P 850 850
+F 0 "J1In1" H 778 1088 50  0000 C CNN
+F 1 "BNCIn1" H 778 997 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 850 850 50  0001 C CNN
+F 3 " ~" H 850 850 50  0001 C CNN
+	1    850  850 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial BNCOut1
+U 1 1 5CC28263
+P 3200 5650
+F 0 "BNCOut1" H 3128 5888 50  0000 C CNN
+F 1 "BNCOut" H 3128 5797 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 3200 5650 50  0001 C CNN
+F 3 " ~" H 3200 5650 50  0001 C CNN
+	1    3200 5650
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
